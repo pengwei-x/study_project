@@ -1,0 +1,9 @@
+java8新特性
+1、lamada表达式
+2、接口的默认方法
+3、函数式接口 @FunctionInterface
+4、流Stream
+5、时间日期API
+6、Optional类 解决空指针异常类
+7、方法引用 System.out::print   XX::new
+8.

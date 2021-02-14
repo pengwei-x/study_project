@@ -1,0 +1,17 @@
+server:
+  port: 8000
+spring:
+  application:
+    name:  mybatis-plus
+  datasource:
+#    springboot2.以后采用com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    mysql6.0以上配置数据源信息时：需要额外配置时区、数据库驱动为：com.mysql.cj.jdbc.Driver
+    url:  jdbc:mysql://localhost:3306/edu?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+
+#mybatis sql日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

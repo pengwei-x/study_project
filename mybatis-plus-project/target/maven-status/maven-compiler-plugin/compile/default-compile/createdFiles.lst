@@ -1,0 +1,5 @@
+com/mybatisplus/MybatisPlusApplication.class
+com/mybatisplus/bean/User.class
+com/mybatisplus/config/Myconfig.class
+com/mybatisplus/handler/MyMataObjectHandler.class
+com/mybatisplus/mapper/UserMapper.class
