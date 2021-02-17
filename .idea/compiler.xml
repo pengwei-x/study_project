@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring_project" />
+        <module name="java-project" />
         <module name="netty-project" />
-        <module name="mybatis-project" />
         <module name="mybatis-plus-project" />
         <module name="kafka-project" />
-        <module name="java-project" />
+        <module name="mybatis-project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -19,6 +20,7 @@
       <module name="mybatis-plus-project" target="8" />
       <module name="mybatis-project" target="1.8" />
       <module name="netty-project" target="1.8" />
+      <module name="spring_project" target="1.8" />
       <module name="study_project" target="1.8" />
     </bytecodeTargetLevel>
   </component>

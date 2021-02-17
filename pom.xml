@@ -14,6 +14,7 @@
         <module>netty-project</module>
         <module>java-project</module>
         <module>kafka-project</module>
+        <module>spring_project</module>
     </modules>
     <!--    有的父级项目的packaging都为pom-->
     <packaging>pom</packaging>
