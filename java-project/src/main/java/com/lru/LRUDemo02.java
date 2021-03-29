@@ -1,5 +1,6 @@
 package com.lru;
 
+import java.lang.reflect.Proxy;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,7 +33,7 @@ public class LRUDemo02 {
 
     }
 
-    class LRUDoubleLinkedList<K,V> {
+    class LRUDoubleLinkedList<K, V> {
 
         private Node<K, V> head;
         private Node<K, V> tail;
@@ -65,18 +66,21 @@ public class LRUDemo02 {
 
     }
 
+    /**
+     * 坑位
+     */
     private int capacity;
     Map<Integer, Node<Integer, Integer>> map;
     LRUDoubleLinkedList<Integer, Integer> doubleLinkedList;
 
     public LRUDemo02(int capacity) {
         this.capacity = capacity;
-        map=new HashMap<>();
-        doubleLinkedList=new LRUDoubleLinkedList<>();
+        map = new HashMap<>();
+        doubleLinkedList = new LRUDoubleLinkedList<>();
     }
 
-    public int get(int key){
-        if (!map.containsKey(key)){
+    public int get(int key) {
+        if (!map.containsKey(key)) {
             return -1;
         }
         Node<Integer, Integer> node = map.get(key);
@@ -85,27 +89,30 @@ public class LRUDemo02 {
         return node.value;
 
     }
-    public void put(int key,int value){
-        if (map.containsKey(key)){
+
+    public void put(int key, int value) {
+        if (map.containsKey(key)) {
             Node<Integer, Integer> node = map.get(key);
-            node.value=value;
-            map.put(key,node);
+            node.value = value;
+            map.put(key, node);
             doubleLinkedList.removeNode(node);
             doubleLinkedList.addNode(node);
 
-        }else {
+        } else {
             //坑位已满
-            if (map.size()==capacity){
+            if (map.size() == capacity) {
                 Node<Integer, Integer> last = doubleLinkedList.getLast();
                 map.remove(last.key);
                 doubleLinkedList.removeNode(last);
             }
-            Node<Integer, Integer> node = new Node<>(key,value);
-           map.put(key,node);
-           doubleLinkedList.addNode(node);
+            Node<Integer, Integer> node = new Node<>(key, value);
+            map.put(key, node);
+            doubleLinkedList.addNode(node);
 
         }
+    }
 
+    public static void main(String[] args) {
 
     }
 }

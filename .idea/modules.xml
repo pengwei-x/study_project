@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/springboot-project/elastic-job/elastic-job.iml" filepath="$PROJECT_DIR$/springboot-project/elastic-job/elastic-job.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-project/java-project.iml" filepath="$PROJECT_DIR$/java-project/java-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka-project/kafka-project.iml" filepath="$PROJECT_DIR$/kafka-project/kafka-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis-plus-project/mybatis-plus-project.iml" filepath="$PROJECT_DIR$/mybatis-plus-project/mybatis-plus-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis-project/mybatis-project.iml" filepath="$PROJECT_DIR$/mybatis-project/mybatis-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-project/netty-project.iml" filepath="$PROJECT_DIR$/netty-project/netty-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_project/spring_project.iml" filepath="$PROJECT_DIR$/spring_project/spring_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-project/springboot-project.iml" filepath="$PROJECT_DIR$/springboot-project/springboot-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/study_project.iml" filepath="$PROJECT_DIR$/.idea/study_project.iml" />
     </modules>
   </component>
